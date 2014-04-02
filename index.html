@@ -78,7 +78,7 @@
                 -o-transform: rotateY( 180deg );
                 transform: rotateY( 180deg );
             }
-  
+
 
         </style>
     </head>
@@ -92,32 +92,6 @@
         </section>
 
         <script src="./jquery.min.js"></script>
-        <script type="text/javascript">
-
-
-            var cardElement = '<section class="container"><div class="card"><figure class="front">&nbsp;</figure><figure class="back">&nbsp;</figure></div></section>';
-
-            var numberOfBoxes = ($(window).height() / 55) * ($(window).width() / 55);
-
-            console.log("numberOfBoxes = " + numberOfBoxes);
-
-            for (var i = 0; i < numberOfBoxes; i++) {
-                $("body").prepend(cardElement);
-                console.log("element added");
-            };
-
-
-            $(".card").hover(function(){
-                if($(this).hasClass("flipped")){
-                    $(this).removeClass("flipped");
-                } else {
-                    $(this).addClass("flipped");
-                }
-                
-            });
-
-            
-
-        </script>
+        <script src="./pixelDraw.js"></script>
     </body>
 </html>
