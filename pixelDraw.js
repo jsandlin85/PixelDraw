@@ -1,6 +1,6 @@
 var cardElement = '<section class="container"><div class="card"><figure class="front">&nbsp;</figure><figure class="back">&nbsp;</figure></div></section>';
 
-var flipTimeout = 100; // how long a box will be inactive after being flipped
+var flipTimeout = 100; // how long (in ms) a box will be inactive after being flipped
 
 var boxSize = 55;
 
@@ -10,7 +10,7 @@ var yBoxes = Math.floor($(window).height() / boxSize)
 
 var xBoxes = Math.floor($(window).width() / boxSize)
 
-var numberOfBoxes = xBoxes * yBoxes - 1; // subtract 1 because the html has one to start with
+var numberOfBoxes = xBoxes * yBoxes;
 
 var xPadding = ($(window).width() - (xBoxes * boxSize) + boxPadding) / 2
 
