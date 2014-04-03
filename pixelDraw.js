@@ -23,12 +23,11 @@ for (var i = 0; i < numberOfBoxes; i++) {
 
 
 $(".card").hover(function() {
-    if ($(this).hasClass("flipped")) {
-        $(this).removeClass("flipped");
-    } else {
+    // if ($(this).hasClass("flipped")) {
+    //     $(this).removeClass("flipped");
+    // } else {
         $(this).addClass("flipped");
-    }
-
+    // }
 });
 
 $("body").css("padding-left", xPadding + "px").css("padding-top", yPadding + "px");
