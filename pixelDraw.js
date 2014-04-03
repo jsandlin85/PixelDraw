@@ -6,6 +6,8 @@ var boxSize = 55;
 
 var boxPadding = 5;
 
+// -------------------
+
 var yBoxes = Math.floor($(window).height() / boxSize)
 
 var xBoxes = Math.floor($(window).width() / boxSize)
